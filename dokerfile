@@ -1,0 +1,15 @@
+# Specify the base image
+From openjdk:11
+
+# set the wok directory inside the container
+WORKDIR ./app
+
+# copy the files to the working directory
+
+COPY ./app
+
+# run the file
+RUN javac app1.java
+
+# command
+CMD ["java","app1"]
